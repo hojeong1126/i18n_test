@@ -3,13 +3,13 @@ const { GoogleSpreadsheet } = require("google-spreadsheet");
 const creds = require("./.credentials/graphic-nucleus-373801-b86488a24ca8.json");
 const i18nextConfig = require("../i18next-scanner.config");
 
-const spreadsheetDocId = "1PrC7OmIdfaEhWGn13xwUAxsHRL_MGcqi5VsoOpT1u6Q";
+const spreadsheetDocId = "1NX5P5Ii4aOvQ415JfXBHTFiOYdHH3R6LmMXbOyIUCQY";
 const ns = "translation";
 const lngs = i18nextConfig.options.lngs;
 const loadPath = i18nextConfig.options.resource.loadPath;
 const localesPath = loadPath.replace("/{{lng}}/{{ns}}.json", "");
 const rePluralPostfix = new RegExp(/_plural|_[\d]/g);
-const sheetId = 113796727305825790937; // your sheet id
+const sheetId = 0; // your sheet id
 const NOT_AVAILABLE_CELL = "_N/A";
 const columnKeyToHeader = {
   key: "키",
